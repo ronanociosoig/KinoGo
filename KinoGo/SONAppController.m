@@ -59,6 +59,7 @@
     
     [manager getTaskForRunningWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
         self.appData.runningMovies = [SONMovieParser parseResponse:responseJSON];
+        SONLog(@"Num items running movies: %d",(int)[self.appData.runningMovies count]);
         [[NSNotificationCenter defaultCenter] postNotificationName:kSONRunningDataReadyNotification object:nil];
     } failureBlock:^(NSError * _Nullable error) {
         NSLog(@"ERROR: %@", error);
@@ -70,6 +71,7 @@
     
     [manager getTaskForPreviewsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
         self.appData.upcomingMovies = [SONMovieParser parseResponse:responseJSON];
+        SONLog(@"Num items upcoming movies: %d",(int)[self.appData.upcomingMovies count]);
         [[NSNotificationCenter defaultCenter] postNotificationName:kSONUpcomingDataReadyNotification object:nil];
     } failureBlock:^(NSError * _Nullable error) {
         NSLog(@"ERROR: %@", error);

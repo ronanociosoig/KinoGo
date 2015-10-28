@@ -12,10 +12,12 @@
 #import "SONMovieTableViewCell.h"
 #import "SONAppController.h"
 
-const float sectionHeight = 160;
+const float headerSectionHeight = 180;
+const float movieSectionHeight = 240;
 const NSInteger kHeaderSection = 0;
 const NSInteger kRunningSection = 1;
 const NSInteger kUpcomingSection = 2;
+const NSInteger kNumberOfSections = 3;
 
 // Section header
 const CGFloat margin = 10.0;
@@ -45,7 +47,7 @@ const CGFloat labelHeight = 24.0;
     [self.tableView registerNib:headerNib forCellReuseIdentifier:kSONHeaderCellIdentifier];
     [self.tableView registerNib:movieNib forCellReuseIdentifier:kSONMovieCellIdentifier];
     
-    self.tableView.rowHeight = sectionHeight;
+    self.tableView.rowHeight = headerSectionHeight;
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     
@@ -68,7 +70,7 @@ const CGFloat labelHeight = 24.0;
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return kNumberOfSections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -78,10 +80,9 @@ const CGFloat labelHeight = 24.0;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     switch (indexPath.section) {
         case kHeaderSection:
-            return 180.0;
-            
+            return headerSectionHeight;
         default:
-            return 260.0;
+            return movieSectionHeight;
     }
 }
 

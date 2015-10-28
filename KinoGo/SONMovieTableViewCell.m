@@ -58,7 +58,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    SONLog(@"");
+    SONLog(@"number of items: %d", (int)[[self dataSourceArray] count]);
     return [[self dataSourceArray] count];
 }
 
@@ -75,12 +75,20 @@
     
     SONLog(@"Movies count: %d",(int)[self dataSourceArray]);
     
-    if (indexPath.row < [[self dataSourceArray]  count]) {
+    if (indexPath.row < [[self dataSourceArray] count]) {
         SONMovie *movie = [self dataSourceArray][indexPath.row];
-        
-        NSURL *url = [NSURL URLWithString:movie.frontPosterImageURLString];
-        [cell.imageView hnk_setImageFromURL:url];
+        SONLog(@"Movie image URL: %@", movie.frontPosterImageURLString);
+        if (movie.frontPosterImageURLString && [movie.frontPosterImageURLString length] > 0) {
+            NSURL *url = [NSURL URLWithString:movie.frontPosterImageURLString];
+            [cell.imageView hnk_setImageFromURL:url];
+        } else {
+            cell.imageView.image = nil;
+        }
+
         cell.titleLabel.text = movie.title;
+        cell.subtitleLabel.text = [NSString stringWithFormat:@"Running: %d",(int)movie.runtime];
+    } else {
+        SONLog(@"Error: array out of bounds.");
     }
     
 //    cell.imageView.image = [UIImage imageNamed:@"MoviePlaceholderImage"];
