@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-typedef void (^SONSuccessBlock)(NSDictionary * __nullable headerFields, NSDictionary * __nullable responseJSON);
+typedef void (^SONSuccessBlock)(NSDictionary * __nullable headerFields, NSArray * __nullable responseJSON);
 typedef void (^SONFailureBlock)(NSError * __nullable error);
 
 @class SONAppData;

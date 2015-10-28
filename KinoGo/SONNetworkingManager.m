@@ -54,7 +54,7 @@
             NSDictionary *headerFields = [httpResp allHeaderFields];
             if (httpResp.statusCode == kHTTP_RESPONSE_CODE_OK) {
                 NSError *jsonError;
-                NSDictionary *jsonResponse =
+                NSArray *jsonResponse =
                 [NSJSONSerialization JSONObjectWithData:data
                                                 options:NSJSONReadingAllowFragments
                                                   error:&jsonError];

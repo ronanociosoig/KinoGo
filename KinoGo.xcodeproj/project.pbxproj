@@ -33,6 +33,8 @@
 		AF7274C91BE1083600EF996D /* SONNetworkingManager+DefaultPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274C61BE1083600EF996D /* SONNetworkingManager+DefaultPath.m */; };
 		AF7274CC1BE10FD000EF996D /* SONAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274CB1BE10FD000EF996D /* SONAppController.m */; };
 		AF7274CF1BE1142F00EF996D /* SONMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274CE1BE1142F00EF996D /* SONMovie.m */; };
+		AF7274D21BE1197F00EF996D /* SONMovieParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274D11BE1197F00EF996D /* SONMovieParser.m */; };
+		AF7274D51BE11B2400EF996D /* SONAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274D41BE11B2400EF996D /* SONAppData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,10 @@
 		AF7274CB1BE10FD000EF996D /* SONAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONAppController.m; sourceTree = "<group>"; };
 		AF7274CD1BE1142F00EF996D /* SONMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONMovie.h; sourceTree = "<group>"; };
 		AF7274CE1BE1142F00EF996D /* SONMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONMovie.m; sourceTree = "<group>"; };
+		AF7274D01BE1197F00EF996D /* SONMovieParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONMovieParser.h; sourceTree = "<group>"; };
+		AF7274D11BE1197F00EF996D /* SONMovieParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONMovieParser.m; sourceTree = "<group>"; };
+		AF7274D31BE11B2400EF996D /* SONAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONAppData.h; sourceTree = "<group>"; };
+		AF7274D41BE11B2400EF996D /* SONAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONAppData.m; sourceTree = "<group>"; };
 		BB012839377DBA3B78752386 /* Pods-KinoGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoGoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KinoGoTests/Pods-KinoGoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF698AD1224C9B08E060AD38 /* Pods-KinoGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KinoGo/Pods-KinoGo.release.xcconfig"; sourceTree = "<group>"; };
 		F41CEC0098AABF61B97823BE /* libPods-KinoGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KinoGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +256,10 @@
 				AF26CE621BE0E6CF001DF7D4 /* Networking */,
 				AF7274CD1BE1142F00EF996D /* SONMovie.h */,
 				AF7274CE1BE1142F00EF996D /* SONMovie.m */,
+				AF7274D01BE1197F00EF996D /* SONMovieParser.h */,
+				AF7274D11BE1197F00EF996D /* SONMovieParser.m */,
+				AF7274D31BE11B2400EF996D /* SONAppData.h */,
+				AF7274D41BE11B2400EF996D /* SONAppData.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -622,6 +632,7 @@
 			files = (
 				AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */,
 				AF7274AA1BE0FB3B00EF996D /* SONCollectionViewCell.m in Sources */,
+				AF7274D51BE11B2400EF996D /* SONAppData.m in Sources */,
 				AF7274AF1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m in Sources */,
 				AF7274C71BE1083600EF996D /* SONGetRequestHelper.m in Sources */,
 				AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */,
@@ -632,6 +643,7 @@
 				AF26CE7E1BE0EEAC001DF7D4 /* SONMovieTableViewCell.m in Sources */,
 				AF26CE271BE0E2DA001DF7D4 /* main.m in Sources */,
 				AF26CE791BE0EE95001DF7D4 /* SONHeaderTableViewCell.m in Sources */,
+				AF7274D21BE1197F00EF996D /* SONMovieParser.m in Sources */,
 				AF7274C81BE1083600EF996D /* SONNetworkingManager.m in Sources */,
 				AF7274CF1BE1142F00EF996D /* SONMovie.m in Sources */,
 			);

@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class SONAppData;
+
 @interface SONAppController : NSObject
 
-+ (SONAppController*) sharedAppController;
+@property (strong, nonatomic, nonnull) SONAppData *appData;
+
++ (nullable SONAppController*) sharedAppController;
 
 - (void)loadCharts;
 - (void)loadRunning;

@@ -9,6 +9,8 @@
 #import "SONAppController.h"
 #import "SONDefines.h"
 #import "SONNetworkingManager+DefaultPath.h"
+#import "SONMovieParser.h"
+#import "SONAppData.h"
 
 @interface SONAppController()
 {
@@ -35,6 +37,7 @@
     
     if (self) {
         manager = [SONNetworkingManager new];
+        self.appData = [[SONAppData alloc] init];
     }
     
     return self;
@@ -43,30 +46,30 @@
 - (void)loadCharts {
     SONLog(@"");
     
-    [manager getTaskForChartsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSDictionary * _Nullable responseJSON) {
-        
+    [manager getTaskForChartsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
+        self.appData.chartsMovies = [SONMovieParser parseResponse:responseJSON];
     } failureBlock:^(NSError * _Nullable error) {
-        
+        NSLog(@"ERROR: %@", error);
     }];
 }
 
 - (void)loadRunning {
     SONLog(@"");
     
-    [manager getTaskForRunningWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSDictionary * _Nullable responseJSON) {
-        
+    [manager getTaskForRunningWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
+        self.appData.runningMovies = [SONMovieParser parseResponse:responseJSON];
     } failureBlock:^(NSError * _Nullable error) {
-        
+        NSLog(@"ERROR: %@", error);
     }];
 }
 
 - (void)loadUpcoming {
     SONLog(@"");
     
-    [manager getTaskForPreviewsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSDictionary * _Nullable responseJSON) {
-        
+    [manager getTaskForPreviewsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
+        self.appData.upcomingMovies = [SONMovieParser parseResponse:responseJSON];
     } failureBlock:^(NSError * _Nullable error) {
-        
+        NSLog(@"ERROR: %@", error);
     }];
 }
 
