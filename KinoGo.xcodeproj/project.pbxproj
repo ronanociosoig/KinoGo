@@ -132,7 +132,6 @@
 				AF26CE5C1BE0E5F8001DF7D4 /* Model */,
 				AF26CE5B1BE0E5EF001DF7D4 /* Views */,
 				AF26CE2E1BE0E2DA001DF7D4 /* Main.storyboard */,
-				AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */,
 				AF26CE331BE0E2DA001DF7D4 /* LaunchScreen.storyboard */,
 				AF26CE361BE0E2DA001DF7D4 /* Info.plist */,
 				AF26CE251BE0E2DA001DF7D4 /* Supporting Files */,
@@ -145,6 +144,7 @@
 		AF26CE251BE0E2DA001DF7D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF7274B11BE1019100EF996D /* Resources */,
 				AF26CE261BE0E2DA001DF7D4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -252,6 +252,22 @@
 				AF7274AE1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib */,
 			);
 			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		AF7274B11BE1019100EF996D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF7274B21BE1019800EF996D /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AF7274B21BE1019800EF996D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

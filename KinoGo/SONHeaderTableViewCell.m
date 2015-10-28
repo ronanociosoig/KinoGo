@@ -19,6 +19,8 @@
     self.collectionView.backgroundColor = BACKGROUND_COLOR;
     UINib *headerNib = [UINib nibWithNibName:@"SONHeaderCollectionViewCell" bundle:nil];
     [self.collectionView registerNib:headerNib forCellWithReuseIdentifier:kSONHeaderCollectionCellIdentifier];
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -29,14 +31,18 @@
 
 #pragma mark - UICollectionView Datasource
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 2;
+    return 5;
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    // kSONHeaderCollectionCellIdentifier
-    
     SONHeaderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kSONHeaderCollectionCellIdentifier forIndexPath:indexPath];
+    
+    NSLog(@"%s", __PRETTY_FUNCTION__);
     
     return cell;
 }

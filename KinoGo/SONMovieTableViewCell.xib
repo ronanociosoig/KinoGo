@@ -22,6 +22,10 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="15" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="PPq-vu-wHM"/>
+                            <outlet property="delegate" destination="-1" id="L3I-Ag-YzN"/>
+                        </connections>
                     </collectionView>
                 </subviews>
             </tableViewCellContentView>

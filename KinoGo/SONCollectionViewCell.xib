@@ -13,7 +13,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="136" height="218"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-JL-VR8">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MoviePlaceholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-JL-VR8">
                         <rect key="frame" x="0.0" y="0.0" width="136" height="160"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-zQ-8fa">
@@ -32,7 +32,15 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <size key="customSize" width="136" height="218"/>
+            <connections>
+                <outlet property="imageView" destination="UsD-JL-VR8" id="14C-gW-NEV"/>
+                <outlet property="subtitleLabel" destination="XKC-wm-8qS" id="Wvt-RH-VME"/>
+                <outlet property="titleLabel" destination="Kas-zQ-8fa" id="AoU-NZ-foc"/>
+            </connections>
             <point key="canvasLocation" x="222" y="325"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="MoviePlaceholderImage" width="90" height="136"/>
+    </resources>
 </document>

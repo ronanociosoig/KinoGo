@@ -11,7 +11,7 @@
 #import "SONHeaderTableViewCell.h"
 #import "SONMovieTableViewCell.h"
 
-const float sectionHeight = 150;
+const float sectionHeight = 160;
 const NSInteger kHeaderSection = 0;
 
 // Section header
