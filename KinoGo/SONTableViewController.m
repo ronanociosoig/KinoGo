@@ -10,6 +10,7 @@
 #import "SONDefines.h"
 #import "SONHeaderTableViewCell.h"
 #import "SONMovieTableViewCell.h"
+#import "SONAppController.h"
 
 const float sectionHeight = 160;
 const NSInteger kHeaderSection = 0;
@@ -20,6 +21,9 @@ const CGFloat labelHeight = 24.0;
 
 
 @interface SONTableViewController ()
+{
+    SONAppController *appController;
+}
 
 @end
 
@@ -41,11 +45,21 @@ const CGFloat labelHeight = 24.0;
     
     self.tableView.rowHeight = sectionHeight;
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    appController = [SONAppController sharedAppController];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [appController loadCharts];
+    [appController loadRunning];
+    [appController loadUpcoming];
 }
 
 #pragma mark - Table view data source

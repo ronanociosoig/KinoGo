@@ -61,6 +61,9 @@
             if (!jsonError) {
                 XCTAssertTrue([jsonObject isKindOfClass:[NSArray class]], @"The JSON object response should be an array.");
                 NSArray *jsonResponse = (NSArray*)jsonObject;
+                
+                SONLog(@"%@", [jsonResponse description]);
+                
                 XCTAssertNotNil(jsonResponse, @"Response should have valid JSON data.");
                 [validServerResponseExpectation fulfill];
             } else {
