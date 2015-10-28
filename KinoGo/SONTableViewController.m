@@ -124,7 +124,7 @@ const CGFloat labelHeight = 24.0;
         case 1:
             return @"Currently running";
         case 2:
-            return @"Upcomming";
+            return @"Upcoming";
         case 0:
         default:
             return nil;
@@ -149,7 +149,7 @@ const CGFloat labelHeight = 24.0;
             aLabel.text = @"Currently running";
             break;
         case 2:
-            aLabel.text = @"Upcomming";
+            aLabel.text = @"Upcoming";
             break;
         case 0:
         default:
