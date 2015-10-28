@@ -17,7 +17,8 @@ extern NSString *const kKinofinderWebserviceUrlRunning;
 extern NSString *const kKinofinderWebserviceUrlPreviews;
 
 // Table / Collection Views
-extern NSString *const kSONCellIdentifier;
+extern NSString *const kSONHeaderCellIdentifier;
+extern NSString *const kSONMovieCellIdentifier;
 
 extern const CGFloat grayTint;
 

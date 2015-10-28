@@ -13,6 +13,7 @@ NSString *const kKinofinderWebserviceUrlCharts = @"/charts";
 NSString *const kKinofinderWebserviceUrlRunning = @"/running";
 NSString *const kKinofinderWebserviceUrlPreviews = @"/previews";
 
-NSString *const kSONCellIdentifier = @"DefaultCellIdentifier";
+NSString *const kSONHeaderCellIdentifier = @"HeaderCellIdentifier";
+NSString *const kSONMovieCellIdentifier = @"HeaderCellIdentifier";
 
 const CGFloat grayTint = (74.0/255.0);

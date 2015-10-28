@@ -1,5 +1,5 @@
 //
-//  SONMovieCollectionViewController.h
+//  SONHeaderTableViewCell.h
 //  KinoGo
 //
 //  Created by Ronan on 28/10/2015.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SONMovieCollectionViewController : UICollectionViewController
+@interface SONHeaderTableViewCell : UITableViewCell
 
 @end
