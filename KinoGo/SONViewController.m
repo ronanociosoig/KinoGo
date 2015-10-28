@@ -6,13 +6,13 @@
 //  Copyright © 2015 Sonomos. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SONViewController.h"
 
-@interface ViewController ()
+@interface SONViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SONViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

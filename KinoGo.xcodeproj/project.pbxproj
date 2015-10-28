@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF26CE271BE0E2DA001DF7D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE261BE0E2DA001DF7D4 /* main.m */; };
-		AF26CE2A1BE0E2DA001DF7D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE291BE0E2DA001DF7D4 /* AppDelegate.m */; };
-		AF26CE2D1BE0E2DA001DF7D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE2C1BE0E2DA001DF7D4 /* ViewController.m */; };
+		AF26CE2A1BE0E2DA001DF7D4 /* SONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE291BE0E2DA001DF7D4 /* SONAppDelegate.m */; };
+		AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE2C1BE0E2DA001DF7D4 /* SONViewController.m */; };
 		AF26CE301BE0E2DA001DF7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE2E1BE0E2DA001DF7D4 /* Main.storyboard */; };
 		AF26CE321BE0E2DA001DF7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */; };
 		AF26CE351BE0E2DA001DF7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE331BE0E2DA001DF7D4 /* LaunchScreen.storyboard */; };
@@ -37,10 +37,10 @@
 /* Begin PBXFileReference section */
 		AF26CE221BE0E2DA001DF7D4 /* KinoGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF26CE261BE0E2DA001DF7D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF26CE281BE0E2DA001DF7D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AF26CE291BE0E2DA001DF7D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AF26CE2B1BE0E2DA001DF7D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AF26CE2C1BE0E2DA001DF7D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF26CE281BE0E2DA001DF7D4 /* SONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SONAppDelegate.h; sourceTree = "<group>"; };
+		AF26CE291BE0E2DA001DF7D4 /* SONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SONAppDelegate.m; sourceTree = "<group>"; };
+		AF26CE2B1BE0E2DA001DF7D4 /* SONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SONViewController.h; sourceTree = "<group>"; };
+		AF26CE2C1BE0E2DA001DF7D4 /* SONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SONViewController.m; sourceTree = "<group>"; };
 		AF26CE2F1BE0E2DA001DF7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF26CE341BE0E2DA001DF7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 		AF26CE241BE0E2DA001DF7D4 /* KinoGo */ = {
 			isa = PBXGroup;
 			children = (
-				AF26CE281BE0E2DA001DF7D4 /* AppDelegate.h */,
-				AF26CE291BE0E2DA001DF7D4 /* AppDelegate.m */,
-				AF26CE2B1BE0E2DA001DF7D4 /* ViewController.h */,
-				AF26CE2C1BE0E2DA001DF7D4 /* ViewController.m */,
+				AF26CE281BE0E2DA001DF7D4 /* SONAppDelegate.h */,
+				AF26CE291BE0E2DA001DF7D4 /* SONAppDelegate.m */,
+				AF26CE2B1BE0E2DA001DF7D4 /* SONViewController.h */,
+				AF26CE2C1BE0E2DA001DF7D4 /* SONViewController.m */,
 				AF26CE2E1BE0E2DA001DF7D4 /* Main.storyboard */,
 				AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */,
 				AF26CE331BE0E2DA001DF7D4 /* LaunchScreen.storyboard */,
@@ -270,8 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF26CE2D1BE0E2DA001DF7D4 /* ViewController.m in Sources */,
-				AF26CE2A1BE0E2DA001DF7D4 /* AppDelegate.m in Sources */,
+				AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */,
+				AF26CE2A1BE0E2DA001DF7D4 /* SONAppDelegate.m in Sources */,
 				AF26CE271BE0E2DA001DF7D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,13 +6,13 @@
 //  Copyright © 2015 Sonomos. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SONAppDelegate.h"
 
-@interface AppDelegate ()
+@interface SONAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SONAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
