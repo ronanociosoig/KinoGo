@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--KinoGo-->
+        <!--KinoFinder-->
         <scene sceneID="602-vp-e0A">
             <objects>
                 <tableViewController id="VH9-2f-aLe" customClass="SONTableViewController" sceneMemberID="viewController">
@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fPF-a2-9a7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" id="fPF-a2-9a7">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fPF-a2-9a7" id="yAP-qc-qJy">
@@ -29,7 +29,7 @@
                             <outlet property="delegate" destination="VH9-2f-aLe" id="GaV-pO-UdJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="KinoGo" id="tlE-XC-yPv"/>
+                    <navigationItem key="navigationItem" title="KinoFinder" id="tlE-XC-yPv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gi1-fP-oR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

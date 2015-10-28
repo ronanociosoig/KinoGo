@@ -12,3 +12,7 @@ NSString *const kKinofinderWebserviceRoot = @"http://api.kinofinder.de/1.0/movie
 NSString *const kKinofinderWebserviceUrlCharts = @"/charts";
 NSString *const kKinofinderWebserviceUrlRunning = @"/running";
 NSString *const kKinofinderWebserviceUrlPreviews = @"/previews";
+
+NSString *const kSONCellIdentifier = @"DefaultCellIdentifier";
+
+const CGFloat grayTint = (74.0/255.0);

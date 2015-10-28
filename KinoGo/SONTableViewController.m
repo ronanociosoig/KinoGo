@@ -7,6 +7,9 @@
 //
 
 #import "SONTableViewController.h"
+#import "SONDefines.h"
+
+const float sectionHeight = 150;
 
 @interface SONTableViewController ()
 
@@ -17,11 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.view.backgroundColor = BACKGROUND_COLOR;
+    [self.navigationController.navigationBar setBarTintColor:NAVIGATION_BAR_COLOR];
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kSONCellIdentifier];
+    self.tableView.rowHeight = sectionHeight;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,22 +35,44 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 0;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+
+ - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONCellIdentifier forIndexPath:indexPath];
+ 
+ // Configure the cell...
+ 
+ return cell;
+ }
+
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return nil;
+            break;
+        case 1:
+            return @"Currently running";
+        case 2:
+            return @"Upcomming";
+            
+        default:
+            return nil;
+    }
 }
-*/
+
+
+//- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    UIView *aView = [[UIView alloc] init];
+//    return aView;
+//}
+//
+
 
 /*
 #pragma mark - Navigation
