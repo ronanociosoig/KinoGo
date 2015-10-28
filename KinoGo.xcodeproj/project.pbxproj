@@ -15,6 +15,8 @@
 		AF26CE351BE0E2DA001DF7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE331BE0E2DA001DF7D4 /* LaunchScreen.storyboard */; };
 		AF26CE401BE0E2DC001DF7D4 /* KinoGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE3F1BE0E2DC001DF7D4 /* KinoGoTests.m */; };
 		AF26CE4B1BE0E2DC001DF7D4 /* KinoGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE4A1BE0E2DC001DF7D4 /* KinoGoUITests.m */; };
+		AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE591BE0E5E8001DF7D4 /* SONDefines.m */; };
+		AF26CE611BE0E628001DF7D4 /* SONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE601BE0E628001DF7D4 /* SONTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		AF26CE461BE0E2DC001DF7D4 /* KinoGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinoGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF26CE4A1BE0E2DC001DF7D4 /* KinoGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KinoGoUITests.m; sourceTree = "<group>"; };
 		AF26CE4C1BE0E2DC001DF7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF26CE581BE0E5E8001DF7D4 /* SONDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONDefines.h; sourceTree = "<group>"; };
+		AF26CE591BE0E5E8001DF7D4 /* SONDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONDefines.m; sourceTree = "<group>"; };
+		AF26CE5F1BE0E628001DF7D4 /* SONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONTableViewController.h; sourceTree = "<group>"; };
+		AF26CE601BE0E628001DF7D4 /* SONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +107,17 @@
 		AF26CE241BE0E2DA001DF7D4 /* KinoGo */ = {
 			isa = PBXGroup;
 			children = (
-				AF26CE281BE0E2DA001DF7D4 /* SONAppDelegate.h */,
-				AF26CE291BE0E2DA001DF7D4 /* SONAppDelegate.m */,
-				AF26CE2B1BE0E2DA001DF7D4 /* SONViewController.h */,
-				AF26CE2C1BE0E2DA001DF7D4 /* SONViewController.m */,
+				AF26CE641BE0E6F9001DF7D4 /* App Delegate */,
+				AF26CE5D1BE0E5FF001DF7D4 /* Controller */,
+				AF26CE5C1BE0E5F8001DF7D4 /* Model */,
+				AF26CE5B1BE0E5EF001DF7D4 /* Views */,
 				AF26CE2E1BE0E2DA001DF7D4 /* Main.storyboard */,
 				AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */,
 				AF26CE331BE0E2DA001DF7D4 /* LaunchScreen.storyboard */,
 				AF26CE361BE0E2DA001DF7D4 /* Info.plist */,
 				AF26CE251BE0E2DA001DF7D4 /* Supporting Files */,
+				AF26CE581BE0E5E8001DF7D4 /* SONDefines.h */,
+				AF26CE591BE0E5E8001DF7D4 /* SONDefines.m */,
 			);
 			path = KinoGo;
 			sourceTree = "<group>";
@@ -138,6 +146,80 @@
 				AF26CE4C1BE0E2DC001DF7D4 /* Info.plist */,
 			);
 			path = KinoGoUITests;
+			sourceTree = "<group>";
+		};
+		AF26CE5B1BE0E5EF001DF7D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE661BE0E716001DF7D4 /* CollectionViewCells */,
+				AF26CE651BE0E70D001DF7D4 /* TableViewCells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF26CE5C1BE0E5F8001DF7D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE621BE0E6CF001DF7D4 /* Networking */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF26CE5D1BE0E5FF001DF7D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE5E1BE0E60C001DF7D4 /* ViewControllers */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF26CE5E1BE0E60C001DF7D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE2B1BE0E2DA001DF7D4 /* SONViewController.h */,
+				AF26CE2C1BE0E2DA001DF7D4 /* SONViewController.m */,
+				AF26CE5F1BE0E628001DF7D4 /* SONTableViewController.h */,
+				AF26CE601BE0E628001DF7D4 /* SONTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF26CE621BE0E6CF001DF7D4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE631BE0E6D8001DF7D4 /* API */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		AF26CE631BE0E6D8001DF7D4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		AF26CE641BE0E6F9001DF7D4 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AF26CE281BE0E2DA001DF7D4 /* SONAppDelegate.h */,
+				AF26CE291BE0E2DA001DF7D4 /* SONAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		AF26CE651BE0E70D001DF7D4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AF26CE661BE0E716001DF7D4 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +284,9 @@
 		AF26CE1A1BE0E2DA001DF7D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SON;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = Sonomos;
+				ORGANIZATIONNAME = "Sonomos Software S.L.";
 				TargetAttributes = {
 					AF26CE211BE0E2DA001DF7D4 = {
 						CreatedOnToolsVersion = 7.1;
@@ -271,7 +354,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */,
+				AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */,
 				AF26CE2A1BE0E2DA001DF7D4 /* SONAppDelegate.m in Sources */,
+				AF26CE611BE0E628001DF7D4 /* SONTableViewController.m in Sources */,
 				AF26CE271BE0E2DA001DF7D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

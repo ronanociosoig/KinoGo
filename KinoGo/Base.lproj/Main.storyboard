@@ -8,7 +8,7 @@
         <!--KinoGo-->
         <scene sceneID="602-vp-e0A">
             <objects>
-                <tableViewController id="VH9-2f-aLe" sceneMemberID="viewController">
+                <tableViewController id="VH9-2f-aLe" customClass="SONTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="A2R-qx-kZC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
