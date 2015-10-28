@@ -25,6 +25,8 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    manager = [SONNetworkingManager new];
 }
 
 - (void)tearDown {
@@ -32,10 +34,17 @@
     [super tearDown];
 }
 
+/*
+ 
+ extern NSString *const kKinofinderWebserviceRoot;
+ extern NSString *const kKinofinderWebserviceUrlCharts;
+ */
+
+
 - (void)testTheAPIReturnsValidData {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    NSString *requestPath = [NSString stringWithFormat:@"%@%@", kSONServerRootPath,kSONAPIDataPath];
+    NSString *requestPath = [NSString stringWithFormat:@"%@%@", kKinofinderWebserviceRoot,kKinofinderWebserviceUrlCharts];
     SONLog(@"Request path: %@", requestPath);
     url = [NSURL URLWithString:requestPath];
     XCTAssert(manager,@"Network manager must not be nil.");
@@ -57,7 +66,7 @@
                                             options:NSJSONReadingAllowFragments
                                               error:&jsonError];
             if (!jsonError) {
-                XCTAssertTrue([jsonObject isKindOfClass:[NSDictionary class]], @"The JSON object response should be an array.");
+                XCTAssertTrue([jsonObject isKindOfClass:[NSArray class]], @"The JSON object response should be an array.");
                 NSArray *jsonResponse = (NSArray*)jsonObject;
                 XCTAssertNotNil(jsonResponse, @"Response should have valid JSON data.");
                 [validServerResponseExpectation fulfill];
