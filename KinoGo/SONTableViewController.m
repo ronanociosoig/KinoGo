@@ -42,8 +42,7 @@ const float sectionHeight = 150;
     return 0;
 }
 
-
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONCellIdentifier forIndexPath:indexPath];
  
  // Configure the cell...

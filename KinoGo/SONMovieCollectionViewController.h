@@ -1,0 +1,13 @@
+//
+//  SONMovieCollectionViewController.h
+//  KinoGo
+//
+//  Created by Ronan on 28/10/2015.
+//  Copyright © 2015 Sonomos Software S.L. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SONMovieCollectionViewController : UICollectionViewController
+
+@end

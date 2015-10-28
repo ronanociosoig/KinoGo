@@ -17,6 +17,10 @@
 		AF26CE4B1BE0E2DC001DF7D4 /* KinoGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE4A1BE0E2DC001DF7D4 /* KinoGoUITests.m */; };
 		AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE591BE0E5E8001DF7D4 /* SONDefines.m */; };
 		AF26CE611BE0E628001DF7D4 /* SONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE601BE0E628001DF7D4 /* SONTableViewController.m */; };
+		AF26CE6F1BE0ED32001DF7D4 /* SONMovieCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE6D1BE0ED32001DF7D4 /* SONMovieCollectionViewController.m */; };
+		AF26CE701BE0ED32001DF7D4 /* SONMovieCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE6E1BE0ED32001DF7D4 /* SONMovieCollectionViewController.xib */; };
+		AF26CE741BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE721BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.m */; };
+		AF26CE751BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE731BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,12 @@
 		AF26CE591BE0E5E8001DF7D4 /* SONDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONDefines.m; sourceTree = "<group>"; };
 		AF26CE5F1BE0E628001DF7D4 /* SONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONTableViewController.h; sourceTree = "<group>"; };
 		AF26CE601BE0E628001DF7D4 /* SONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONTableViewController.m; sourceTree = "<group>"; };
+		AF26CE6C1BE0ED32001DF7D4 /* SONMovieCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONMovieCollectionViewController.h; sourceTree = "<group>"; };
+		AF26CE6D1BE0ED32001DF7D4 /* SONMovieCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONMovieCollectionViewController.m; sourceTree = "<group>"; };
+		AF26CE6E1BE0ED32001DF7D4 /* SONMovieCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONMovieCollectionViewController.xib; sourceTree = "<group>"; };
+		AF26CE711BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONHeaderCollectionViewController.h; sourceTree = "<group>"; };
+		AF26CE721BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONHeaderCollectionViewController.m; sourceTree = "<group>"; };
+		AF26CE731BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONHeaderCollectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +190,12 @@
 				AF26CE2C1BE0E2DA001DF7D4 /* SONViewController.m */,
 				AF26CE5F1BE0E628001DF7D4 /* SONTableViewController.h */,
 				AF26CE601BE0E628001DF7D4 /* SONTableViewController.m */,
+				AF26CE6C1BE0ED32001DF7D4 /* SONMovieCollectionViewController.h */,
+				AF26CE6D1BE0ED32001DF7D4 /* SONMovieCollectionViewController.m */,
+				AF26CE6E1BE0ED32001DF7D4 /* SONMovieCollectionViewController.xib */,
+				AF26CE711BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.h */,
+				AF26CE721BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.m */,
+				AF26CE731BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -327,7 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF26CE351BE0E2DA001DF7D4 /* LaunchScreen.storyboard in Resources */,
+				AF26CE701BE0ED32001DF7D4 /* SONMovieCollectionViewController.xib in Resources */,
 				AF26CE321BE0E2DA001DF7D4 /* Assets.xcassets in Resources */,
+				AF26CE751BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.xib in Resources */,
 				AF26CE301BE0E2DA001DF7D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */,
+				AF26CE6F1BE0ED32001DF7D4 /* SONMovieCollectionViewController.m in Sources */,
 				AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */,
 				AF26CE2A1BE0E2DA001DF7D4 /* SONAppDelegate.m in Sources */,
 				AF26CE611BE0E628001DF7D4 /* SONTableViewController.m in Sources */,
+				AF26CE741BE0ED5C001DF7D4 /* SONHeaderCollectionViewController.m in Sources */,
 				AF26CE271BE0E2DA001DF7D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
