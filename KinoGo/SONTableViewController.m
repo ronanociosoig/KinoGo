@@ -14,6 +14,8 @@
 
 const float sectionHeight = 160;
 const NSInteger kHeaderSection = 0;
+const NSInteger kRunningSection = 1;
+const NSInteger kUpcomingSection = 2;
 
 // Section header
 const CGFloat margin = 10.0;
@@ -46,6 +48,7 @@ const CGFloat labelHeight = 24.0;
     self.tableView.rowHeight = sectionHeight;
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
+    
     appController = [SONAppController sharedAppController];
 }
 
@@ -72,16 +75,47 @@ const CGFloat labelHeight = 24.0;
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    switch (indexPath.section) {
+        case kHeaderSection:
+            return 180.0;
+            
+        default:
+            return 260.0;
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (indexPath.section == kHeaderSection) {
-        SONHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONHeaderCellIdentifier forIndexPath:indexPath];
-        cell.backgroundColor = BACKGROUND_COLOR;
-        return cell;
-    } else {
-        SONMovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONMovieCellIdentifier forIndexPath:indexPath];
-        cell.backgroundColor = BACKGROUND_COLOR;
-        return cell;
+    switch (indexPath.section) {
+        case kHeaderSection:
+        {
+            SONHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONHeaderCellIdentifier forIndexPath:indexPath];
+            cell.backgroundColor = BACKGROUND_COLOR;
+            return cell;
+        }
+            
+            break;
+            case kRunningSection:
+        {
+            SONMovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONMovieCellIdentifier forIndexPath:indexPath];
+            //cell.notificationProperty = kSONRunningDataReadyNotification;
+            [cell configureNotification:kSONRunningDataReadyNotification];
+            cell.backgroundColor = BACKGROUND_COLOR;
+            return cell;
+        }
+            break;
+        case kUpcomingSection:
+        {
+            SONMovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSONMovieCellIdentifier forIndexPath:indexPath];
+            //cell.notificationProperty = kSONUpcomingDataReadyNotification;
+            [cell configureNotification:kSONUpcomingDataReadyNotification];
+            cell.backgroundColor = BACKGROUND_COLOR;
+            return cell;
+        }
+            break;
+        default:
+            return nil;
+            break;
     }
 }
 

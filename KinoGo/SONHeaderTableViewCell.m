@@ -28,7 +28,8 @@
     
     if (!self.appController) {
         self.appController = [SONAppController sharedAppController];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chartsDataReadyNotificationHandler:) name: @"ChartsDataReadyNotificaiton" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chartsDataReadyNotificationHandler:) name: kSONChartsDataReadyNotification object:nil];
+        
     }
 }
 

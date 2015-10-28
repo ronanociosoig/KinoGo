@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class SONAppController;
+
 @interface SONMovieTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic, nonnull) SONAppController *appController;
+@property (strong, nonatomic, nonnull) NSString *notificationProperty;
+
+@property (assign, nonatomic) NSInteger selectedIndex;
+
+- (void) configureNotification:(NSString* __nonnull)notification;
 
 @end

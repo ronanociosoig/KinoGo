@@ -11,8 +11,8 @@
 @class SONAppController;
 
 @interface SONHeaderTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
-@property (strong, nonatomic) SONAppController *appController;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic, nonnull) SONAppController *appController;
 
 @end

@@ -11,6 +11,8 @@
 #import "SONCollectionViewCell.h"
 #import "SONAppController.h"
 #import "SONAppData.h"
+#import "Haneke.h"
+#import "SONMovie.h"
 
 @implementation SONMovieTableViewCell
 
@@ -24,6 +26,23 @@
     [self.collectionView registerNib:headerNib forCellWithReuseIdentifier:kSONMovieCollectionCellIdentifier];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
+    
+    if (!self.appController) {
+        self.appController = [SONAppController sharedAppController];
+    }
+    
+    if (self.notificationProperty) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationHandler:) name: self.notificationProperty object:nil];
+    }
+    
+    self.selectedIndex = -1;
+}
+
+- (void) configureNotification:(NSString* __nonnull)notification {
+    self.notificationProperty = notification;
+    if (self.notificationProperty) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationHandler:) name: self.notificationProperty object:nil];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -39,15 +58,42 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 12;
+    SONLog(@"");
+    return [[self dataSourceArray] count];
+}
+
+- (NSArray*)dataSourceArray {
+    if ([self.notificationProperty isEqualToString:kSONRunningDataReadyNotification]) {
+        return self.appController.appData.runningMovies;
+    } else {
+        return self.appController.appData.upcomingMovies;
+    }
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SONCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kSONMovieCollectionCellIdentifier forIndexPath:indexPath];
-    cell.imageView.image = [UIImage imageNamed:@"MoviePlaceholderImage"];
-    cell.titleLabel.text = @"Inter";
-    cell.titleLabel.textColor = [UIColor lightGrayColor];
-    cell.subtitleLabel.text = @"Subtitle";
+    
+    SONLog(@"Movies count: %d",(int)[self dataSourceArray]);
+    
+    if (indexPath.row < [[self dataSourceArray]  count]) {
+        SONMovie *movie = [self dataSourceArray][indexPath.row];
+        
+        NSURL *url = [NSURL URLWithString:movie.frontPosterImageURLString];
+        [cell.imageView hnk_setImageFromURL:url];
+        cell.titleLabel.text = movie.title;
+    }
+    
+//    cell.imageView.image = [UIImage imageNamed:@"MoviePlaceholderImage"];
+//    cell.titleLabel.text = @"Inter";
+//    cell.titleLabel.textColor = [UIColor lightGrayColor];
+//    cell.subtitleLabel.text = @"Subtitle";
+
+    if (indexPath.row == self.selectedIndex) {
+        cell.layer.borderColor = NAVIGATION_BAR_COLOR.CGColor;
+        cell.layer.borderWidth = 2;
+    } else {
+        cell.layer.borderWidth = 0;
+    }
     
     return cell;
 }
@@ -66,9 +112,18 @@
 
 - (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    MJLog(@"");
-//    VINCallCollectionViewCell *cell = (VINCallCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-//    [[NSNotificationCenter defaultCenter] postNotificationName:kOUTGOING_CALL_NOTIFICATION object:cell.objectId];
+    SONCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kSONMovieCollectionCellIdentifier forIndexPath:indexPath];
+    self.selectedIndex = indexPath.row;
+    cell.layer.borderColor = NAVIGATION_BAR_COLOR.CGColor;
+    cell.layer.borderWidth = 2;
+}
+
+#pragma mark - NSNotification handler
+
+- (void)notificationHandler:(NSNotification*)notification {
+    DISPATCH_ON_MAIN(^{
+        [self.collectionView reloadData];
+    });
 }
 
 @end
