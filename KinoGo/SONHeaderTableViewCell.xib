@@ -22,9 +22,16 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="15" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="uxJ-EX-evj"/>
+                            <outlet property="delegate" destination="-1" id="ol8-fN-9dd"/>
+                        </connections>
                     </collectionView>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="aZ6-N5-9PC" id="8n6-id-lDp"/>
+            </connections>
             <point key="canvasLocation" x="237" y="297"/>
         </tableViewCell>
     </objects>

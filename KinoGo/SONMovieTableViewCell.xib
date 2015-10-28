@@ -25,6 +25,9 @@
                     </collectionView>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="ilN-w2-P3h" id="sBq-qB-JQH"/>
+            </connections>
             <point key="canvasLocation" x="240" y="302"/>
         </tableViewCell>
     </objects>

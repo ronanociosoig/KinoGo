@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SONHeaderTableViewCell : UITableViewCell
+@interface SONHeaderTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

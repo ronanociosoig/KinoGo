@@ -14,6 +14,8 @@ NSString *const kKinofinderWebserviceUrlRunning = @"/running";
 NSString *const kKinofinderWebserviceUrlPreviews = @"/previews";
 
 NSString *const kSONHeaderCellIdentifier = @"HeaderCellIdentifier";
-NSString *const kSONMovieCellIdentifier = @"HeaderCellIdentifier";
+NSString *const kSONMovieCellIdentifier = @"MovieCellIdentifier";
+NSString *const kSONHeaderCollectionCellIdentifier = @"HeaderCollectionCellIdentifier";
+NSString *const kSONMovieCollectionCellIdentifier = @"MovieCollectionCellIdentifier";
 
 const CGFloat grayTint = (74.0/255.0);

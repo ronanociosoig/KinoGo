@@ -21,6 +21,10 @@
 		AF26CE7A1BE0EE95001DF7D4 /* SONHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE781BE0EE95001DF7D4 /* SONHeaderTableViewCell.xib */; };
 		AF26CE7E1BE0EEAC001DF7D4 /* SONMovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26CE7C1BE0EEAC001DF7D4 /* SONMovieTableViewCell.m */; };
 		AF26CE7F1BE0EEAC001DF7D4 /* SONMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF26CE7D1BE0EEAC001DF7D4 /* SONMovieTableViewCell.xib */; };
+		AF7274AA1BE0FB3B00EF996D /* SONCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274A81BE0FB3B00EF996D /* SONCollectionViewCell.m */; };
+		AF7274AB1BE0FB3B00EF996D /* SONCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7274A91BE0FB3B00EF996D /* SONCollectionViewCell.xib */; };
+		AF7274AF1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274AD1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m */; };
+		AF7274B01BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7274AE1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,12 @@
 		AF26CE7B1BE0EEAC001DF7D4 /* SONMovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONMovieTableViewCell.h; sourceTree = "<group>"; };
 		AF26CE7C1BE0EEAC001DF7D4 /* SONMovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONMovieTableViewCell.m; sourceTree = "<group>"; };
 		AF26CE7D1BE0EEAC001DF7D4 /* SONMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONMovieTableViewCell.xib; sourceTree = "<group>"; };
+		AF7274A71BE0FB3B00EF996D /* SONCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONCollectionViewCell.h; sourceTree = "<group>"; };
+		AF7274A81BE0FB3B00EF996D /* SONCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONCollectionViewCell.m; sourceTree = "<group>"; };
+		AF7274A91BE0FB3B00EF996D /* SONCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF7274AC1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONHeaderCollectionViewCell.h; sourceTree = "<group>"; };
+		AF7274AD1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONHeaderCollectionViewCell.m; sourceTree = "<group>"; };
+		AF7274AE1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +244,12 @@
 		AF26CE661BE0E716001DF7D4 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				AF7274A71BE0FB3B00EF996D /* SONCollectionViewCell.h */,
+				AF7274A81BE0FB3B00EF996D /* SONCollectionViewCell.m */,
+				AF7274A91BE0FB3B00EF996D /* SONCollectionViewCell.xib */,
+				AF7274AC1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.h */,
+				AF7274AD1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m */,
+				AF7274AE1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib */,
 			);
 			name = CollectionViewCells;
 			sourceTree = "<group>";
@@ -343,7 +359,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF26CE351BE0E2DA001DF7D4 /* LaunchScreen.storyboard in Resources */,
+				AF7274AB1BE0FB3B00EF996D /* SONCollectionViewCell.xib in Resources */,
 				AF26CE7F1BE0EEAC001DF7D4 /* SONMovieTableViewCell.xib in Resources */,
+				AF7274B01BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib in Resources */,
 				AF26CE7A1BE0EE95001DF7D4 /* SONHeaderTableViewCell.xib in Resources */,
 				AF26CE321BE0E2DA001DF7D4 /* Assets.xcassets in Resources */,
 				AF26CE301BE0E2DA001DF7D4 /* Main.storyboard in Resources */,
@@ -372,6 +390,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */,
+				AF7274AA1BE0FB3B00EF996D /* SONCollectionViewCell.m in Sources */,
+				AF7274AF1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m in Sources */,
 				AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */,
 				AF26CE2A1BE0E2DA001DF7D4 /* SONAppDelegate.m in Sources */,
 				AF26CE611BE0E628001DF7D4 /* SONTableViewController.m in Sources */,
@@ -603,6 +623,7 @@
 				AF26CE511BE0E2DC001DF7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF26CE521BE0E2DC001DF7D4 /* Build configuration list for PBXNativeTarget "KinoGoTests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +632,7 @@
 				AF26CE541BE0E2DC001DF7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF26CE551BE0E2DC001DF7D4 /* Build configuration list for PBXNativeTarget "KinoGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +641,7 @@
 				AF26CE571BE0E2DC001DF7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

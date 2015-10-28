@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SONMovieTableViewCell : UITableViewCell
+@interface SONMovieTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
