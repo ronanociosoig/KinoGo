@@ -25,6 +25,10 @@
 		AF7274AB1BE0FB3B00EF996D /* SONCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7274A91BE0FB3B00EF996D /* SONCollectionViewCell.xib */; };
 		AF7274AF1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274AD1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m */; };
 		AF7274B01BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7274AE1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib */; };
+		AF7274BA1BE1070B00EF996D /* KinoGoOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274B91BE1070B00EF996D /* KinoGoOnlineTests.m */; };
+		AF7274C71BE1083600EF996D /* SONGetRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274C21BE1083600EF996D /* SONGetRequestHelper.m */; };
+		AF7274C81BE1083600EF996D /* SONNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274C41BE1083600EF996D /* SONNetworkingManager.m */; };
+		AF7274C91BE1083600EF996D /* SONNetworkingManager+DefaultPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7274C61BE1083600EF996D /* SONNetworkingManager+DefaultPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,13 @@
 			remoteInfo = KinoGo;
 		};
 		AF26CE471BE0E2DC001DF7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF26CE1A1BE0E2DA001DF7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF26CE211BE0E2DA001DF7D4;
+			remoteInfo = KinoGo;
+		};
+		AF7274BC1BE1070B00EF996D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AF26CE1A1BE0E2DA001DF7D4 /* Project object */;
 			proxyType = 1;
@@ -77,6 +88,15 @@
 		AF7274AC1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONHeaderCollectionViewCell.h; sourceTree = "<group>"; };
 		AF7274AD1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONHeaderCollectionViewCell.m; sourceTree = "<group>"; };
 		AF7274AE1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF7274B71BE1070B00EF996D /* KinoGoOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinoGoOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7274B91BE1070B00EF996D /* KinoGoOnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KinoGoOnlineTests.m; sourceTree = "<group>"; };
+		AF7274BB1BE1070B00EF996D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7274C11BE1083600EF996D /* SONGetRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONGetRequestHelper.h; sourceTree = "<group>"; };
+		AF7274C21BE1083600EF996D /* SONGetRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONGetRequestHelper.m; sourceTree = "<group>"; };
+		AF7274C31BE1083600EF996D /* SONNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONNetworkingManager.h; sourceTree = "<group>"; };
+		AF7274C41BE1083600EF996D /* SONNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONNetworkingManager.m; sourceTree = "<group>"; };
+		AF7274C51BE1083600EF996D /* SONNetworkingManager+DefaultPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SONNetworkingManager+DefaultPath.h"; sourceTree = "<group>"; };
+		AF7274C61BE1083600EF996D /* SONNetworkingManager+DefaultPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SONNetworkingManager+DefaultPath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF7274B41BE1070B00EF996D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +137,7 @@
 				AF26CE241BE0E2DA001DF7D4 /* KinoGo */,
 				AF26CE3E1BE0E2DC001DF7D4 /* KinoGoTests */,
 				AF26CE491BE0E2DC001DF7D4 /* KinoGoUITests */,
+				AF7274B81BE1070B00EF996D /* KinoGoOnlineTests */,
 				AF26CE231BE0E2DA001DF7D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +148,7 @@
 				AF26CE221BE0E2DA001DF7D4 /* KinoGo.app */,
 				AF26CE3B1BE0E2DC001DF7D4 /* KinoGoTests.xctest */,
 				AF26CE461BE0E2DC001DF7D4 /* KinoGoUITests.xctest */,
+				AF7274B71BE1070B00EF996D /* KinoGoOnlineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +236,10 @@
 		AF26CE621BE0E6CF001DF7D4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				AF7274C11BE1083600EF996D /* SONGetRequestHelper.h */,
+				AF7274C21BE1083600EF996D /* SONGetRequestHelper.m */,
+				AF7274C31BE1083600EF996D /* SONNetworkingManager.h */,
+				AF7274C41BE1083600EF996D /* SONNetworkingManager.m */,
 				AF26CE631BE0E6D8001DF7D4 /* API */,
 			);
 			name = Networking;
@@ -215,6 +248,8 @@
 		AF26CE631BE0E6D8001DF7D4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				AF7274C51BE1083600EF996D /* SONNetworkingManager+DefaultPath.h */,
+				AF7274C61BE1083600EF996D /* SONNetworkingManager+DefaultPath.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -268,6 +303,15 @@
 				AF26CE311BE0E2DA001DF7D4 /* Assets.xcassets */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		AF7274B81BE1070B00EF996D /* KinoGoOnlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF7274B91BE1070B00EF996D /* KinoGoOnlineTests.m */,
+				AF7274BB1BE1070B00EF996D /* Info.plist */,
+			);
+			path = KinoGoOnlineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +370,24 @@
 			productReference = AF26CE461BE0E2DC001DF7D4 /* KinoGoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AF7274B61BE1070B00EF996D /* KinoGoOnlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7274BE1BE1070B00EF996D /* Build configuration list for PBXNativeTarget "KinoGoOnlineTests" */;
+			buildPhases = (
+				AF7274B31BE1070B00EF996D /* Sources */,
+				AF7274B41BE1070B00EF996D /* Frameworks */,
+				AF7274B51BE1070B00EF996D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7274BD1BE1070B00EF996D /* PBXTargetDependency */,
+			);
+			name = KinoGoOnlineTests;
+			productName = KinoGoOnlineTests;
+			productReference = AF7274B71BE1070B00EF996D /* KinoGoOnlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +409,10 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = AF26CE211BE0E2DA001DF7D4;
 					};
+					AF7274B61BE1070B00EF996D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = AF26CE211BE0E2DA001DF7D4;
+					};
 				};
 			};
 			buildConfigurationList = AF26CE1D1BE0E2DA001DF7D4 /* Build configuration list for PBXProject "KinoGo" */;
@@ -365,6 +431,7 @@
 				AF26CE211BE0E2DA001DF7D4 /* KinoGo */,
 				AF26CE3A1BE0E2DC001DF7D4 /* KinoGoTests */,
 				AF26CE451BE0E2DC001DF7D4 /* KinoGoUITests */,
+				AF7274B61BE1070B00EF996D /* KinoGoOnlineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -398,6 +465,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF7274B51BE1070B00EF996D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,12 +482,15 @@
 				AF26CE2D1BE0E2DA001DF7D4 /* SONViewController.m in Sources */,
 				AF7274AA1BE0FB3B00EF996D /* SONCollectionViewCell.m in Sources */,
 				AF7274AF1BE0FBDD00EF996D /* SONHeaderCollectionViewCell.m in Sources */,
+				AF7274C71BE1083600EF996D /* SONGetRequestHelper.m in Sources */,
 				AF26CE5A1BE0E5E8001DF7D4 /* SONDefines.m in Sources */,
+				AF7274C91BE1083600EF996D /* SONNetworkingManager+DefaultPath.m in Sources */,
 				AF26CE2A1BE0E2DA001DF7D4 /* SONAppDelegate.m in Sources */,
 				AF26CE611BE0E628001DF7D4 /* SONTableViewController.m in Sources */,
 				AF26CE7E1BE0EEAC001DF7D4 /* SONMovieTableViewCell.m in Sources */,
 				AF26CE271BE0E2DA001DF7D4 /* main.m in Sources */,
 				AF26CE791BE0EE95001DF7D4 /* SONHeaderTableViewCell.m in Sources */,
+				AF7274C81BE1083600EF996D /* SONNetworkingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +510,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF7274B31BE1070B00EF996D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7274BA1BE1070B00EF996D /* KinoGoOnlineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -445,6 +530,11 @@
 			isa = PBXTargetDependency;
 			target = AF26CE211BE0E2DA001DF7D4 /* KinoGo */;
 			targetProxy = AF26CE471BE0E2DC001DF7D4 /* PBXContainerItemProxy */;
+		};
+		AF7274BD1BE1070B00EF996D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF26CE211BE0E2DA001DF7D4 /* KinoGo */;
+			targetProxy = AF7274BC1BE1070B00EF996D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,6 +710,30 @@
 			};
 			name = Release;
 		};
+		AF7274BF1BE1070B00EF996D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KinoGoOnlineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.KinoGoOnlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinoGo.app/KinoGo";
+			};
+			name = Debug;
+		};
+		AF7274C01BE1070B00EF996D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KinoGoOnlineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonomos.KinoGoOnlineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinoGo.app/KinoGo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -658,6 +772,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AF7274BE1BE1070B00EF996D /* Build configuration list for PBXNativeTarget "KinoGoOnlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7274BF1BE1070B00EF996D /* Debug */,
+				AF7274C01BE1070B00EF996D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

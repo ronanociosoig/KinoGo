@@ -48,6 +48,16 @@
                ReferencedContainer = "container:KinoGo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF7274B61BE1070B00EF996D"
+               BuildableName = "KinoGoOnlineTests.xctest"
+               BlueprintName = "KinoGoOnlineTests"
+               ReferencedContainer = "container:KinoGo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -19,3 +19,10 @@ NSString *const kSONHeaderCollectionCellIdentifier = @"HeaderCollectionCellIdent
 NSString *const kSONMovieCollectionCellIdentifier = @"MovieCollectionCellIdentifier";
 
 const CGFloat grayTint = (74.0/255.0);
+
+// HTTP codes
+const NSInteger kHTTP_RESPONSE_CODE_OK = 200;
+const NSInteger kHTTP_RESPONSE_CODE_NOT_MODIFIED = 304;
+const NSInteger kHTTP_RESPONSE_CODE_NOT_FOUND = 404;
+
+NSString *const kSONErrorDomain = @"KinoGoErrorDomain";
