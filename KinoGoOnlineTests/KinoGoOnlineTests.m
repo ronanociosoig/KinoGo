@@ -8,8 +8,15 @@
 
 #import <XCTest/XCTest.h>
 #import "SONDefines.h"
+#import "SONNetworkingManager.h"
+#import "SONNetworkingManager+DefaultPath.h"
 
 @interface KinoGoOnlineTests : XCTestCase
+{
+    NSURL *url;
+    NSMutableURLRequest *request;
+    SONNetworkingManager *manager;
+}
 
 @end
 
