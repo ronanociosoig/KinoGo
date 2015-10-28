@@ -1,4 +1,5 @@
 PODS:
+  - Haneke (1.0.1)
   - OHHTTPStubs (4.4.0):
     - OHHTTPStubs/Default (= 4.4.0)
   - OHHTTPStubs/Core (4.4.0)
@@ -15,10 +16,12 @@ PODS:
   - Reachability (3.1.1)
 
 DEPENDENCIES:
+  - Haneke
   - OHHTTPStubs
   - Reachability (~> 3.1.1)
 
 SPEC CHECKSUMS:
+  Haneke: d60be8b96b228633b24708dd153169d6849d6f78
   OHHTTPStubs: 1a95a653b78287a1fdb44eb38364b43257ac3550
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
 

@@ -48,6 +48,7 @@
     
     [manager getTaskForChartsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
         self.appData.chartsMovies = [SONMovieParser parseResponse:responseJSON];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ChartsDataReadyNotificaiton" object:nil];
     } failureBlock:^(NSError * _Nullable error) {
         NSLog(@"ERROR: %@", error);
     }];
@@ -58,6 +59,7 @@
     
     [manager getTaskForRunningWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
         self.appData.runningMovies = [SONMovieParser parseResponse:responseJSON];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"RunningMoviesReadyNotificaiton" object:nil];
     } failureBlock:^(NSError * _Nullable error) {
         NSLog(@"ERROR: %@", error);
     }];
@@ -68,6 +70,7 @@
     
     [manager getTaskForPreviewsWithSuccessBlock:^(NSDictionary * _Nullable headerFields, NSArray * _Nullable responseJSON) {
         self.appData.upcomingMovies = [SONMovieParser parseResponse:responseJSON];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"PreviewsMoviesReadyNotificaiton" object:nil];
     } failureBlock:^(NSError * _Nullable error) {
         NSLog(@"ERROR: %@", error);
     }];

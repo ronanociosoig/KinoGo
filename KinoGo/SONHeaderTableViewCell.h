@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SONAppController;
+
 @interface SONHeaderTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic) SONAppController *appController;
 
 @end

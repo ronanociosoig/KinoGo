@@ -9,6 +9,8 @@
 #import "SONMovieTableViewCell.h"
 #import "SONDefines.h"
 #import "SONCollectionViewCell.h"
+#import "SONAppController.h"
+#import "SONAppData.h"
 
 @implementation SONMovieTableViewCell
 
